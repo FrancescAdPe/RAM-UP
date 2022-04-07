@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="contacto.css" />
+    <input type="checkbox" name="toogle" id="toogle" />
+    <label for="toogle">
+      <div class="class menu">Menu</div>
+    </label>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../biografia/biografia.html">Biografía</a></li>
+      <li><a href="../galeria/galeria.html">Galería</a></li>
+      <li><a href="#" class="active">Contacto</a></li>
+    </ul>
+</head>
+
+  <body>
+   
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="name">Nombre:</label><br>
+            <input id="name"  type="text" required placeholder="Nombre" autofocus/>
+            <br><br>
+
+            <label for="Apellidos">Apellidos:</label><br>
+            <input type="text" placeholder="Apellidos" id="apellidos" name="apellidos" required><br><br>
+
+            <label for="edad">Edad:</label><br>
+            <input type="number" placeholder="18 o más" id="edad" name="edad" required><br><br>
+
+            <label for="edad">Fecha de nacimiento:</label></label><br>
+            <input type="date" id="nacimiento" name="nacimiento" required><br><br>
+
+            <p>Sexo</p>
+            <label for="hombre">Hombre</label>
+            <input id="hombre" name="sexo" type="radio" value="hombre" required/>
+            <label for="mujer">Mujer</label>
+            <input id="mujer" name="sexo" type="radio" value="mujer" required/>
+            <br><br>
+        </fieldset>
+            
+        <fieldset>
+            <legend>Sobre ti</legend>
+            <label for="deporte">Deporte favorito:</label>
+                <select name="deporte" id="deporfav">
+                    <option value="futbol">Fútbol</option>
+                    <option value="baloncesto">Baloncesto</option>
+                    <option value="fitness">Fitness</option>
+                    <option value="mindfulness">Mindfulness</option>
+                    <option value="petanca">Petanca</option>
+                    <option value="derrochar">Shopping</option>
+                    <option value="otros">Otros</option><br><br>
+                </select>
+                    <br><br>
+                
+            <label for="colorfav">Color favorito:</label>
+                <input type="color" id="colorfav" name="colorfav" value="#ff0000"><br><br>
+
+            <label for="cuentanos">Cuéntanos alguna curiosidad:</label><br>
+                <textarea name="cuentanos" rows="5" cols="50">
+                </textarea> 
+                <br><br>
+        </fieldset>
+        <fieldset>  
+            <legend>Datos de contacto</legend>
+                    <label for="telefono">Número de teléfono:</label><br>
+                    <input type="tel" id="telefono" name="telefono"><br><br>
+
+                    <label for="email">email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="email" required><br><br>
+
+                    <div class="container">
+                        <label for="ciunaci">Ciudad de nacimiento:</label>
+                        <div class="text-container">
+                            <input type="text" list="ciunaci" placeholder="Elige tu ciudad de nacimiento:" />
+                            <datalist id="ciunaci">
+                                <option value="Málaga">Málaga</option>
+                                <option value="Madrid">Madrid</option>
+                                <option value="Barcelona">Barcelona</option>
+                                <option value="Ourense">Ourense</option>
+                                <option value="San Sebastián">San Sebastián</option>
+                                <option value="Cáceres">Cáceres</option>
+                                <option value="Teruel">Teruel</option>
+                                <option value="Palma de Canarias">Palma de Canarias</option>
+                                <option value="Ferrol">Ferrol</option>
+                                <option value="León">León</option>
+                                <option value="Huelva">Huelva</option>
+                                <option value="Alcorcón">Alcorcón</option>
+                            </datalist>
+                        </div>
+                    </div>
+
+        </fieldset><br>
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+
+    </form>
+                 
+
+</body>
+<footer></footer>
+</html> 
